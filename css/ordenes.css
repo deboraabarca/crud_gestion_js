@@ -1,0 +1,9 @@
+.vista-ordenes table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.vista-ordenes th, .vista-ordenes td {
+    border: 1px solid var(--color-texto);
+    padding: 10px;
+}

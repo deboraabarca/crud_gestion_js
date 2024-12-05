@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Órdenes</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="vista-ordenes">
+    <h2>Crear Orden</h2>
+    <form id="form-crear-orden">
+        <label for="cliente">Cliente:</label>
+        <input type="text" id="cliente" placeholder="Nombre del cliente" required>
+    
+        <label for="metodo-pago">Método de Pago:</label>
+        <select id="metodo-pago" required>
+            <option value="tarjeta">Tarjeta</option>
+            <option value="efectivo">Efectivo</option>
+        </select>
+    
+        <table id="tabla-productos-orden">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Cantidad</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button type="submit">Crear Orden</button>
+    </form>
+    <nav>
+        <a href="historial.html" id="btn-historial">Ver Historial de Órdenes</a>
+    </nav>
+    <!-- Tabla para mostrar las órdenes creadas -->
+    <table id="tabla-ordenes">
+        <thead>
+            <tr>
+                <th>Cliente</th>
+                <th>Productos</th>
+                <th>Método de Pago</th>
+                <th>Total</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí se mostrarán las órdenes -->
+        </tbody>
+    </table>
+</div>
+
+
+    <script src="js/ordenes.js"></script>
+</body>
+</html>
